@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL PROPERTY INNOVATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- TODO: Ganti src dengan path ke logo perusahaan Anda -->
+         <div class="logonav">
+             <img src="./img/Leonardo_Phoenix_An_elegant_silhouette_of_a_bridge_in_gold_rep_3 copy.jpg" alt="Logo Perusahaan" id="company-logo">
+             <h1>GLOBAL PROPERTY INNOVATION</h1>
+         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#properties">Properti</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2></h2>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="properties">
+            <h2>Properti Unggulan</h2>
+            <div class="property-grid">
+                <!-- TODO: Untuk menambah properti, salin seluruh div dengan class "property-card" -->
+                <div class="property-card" data-id="1">
+                    <!-- TODO: Ganti src dengan path ke foto properti -->
+                    <img src="./img/67039ad87fc09cdae87a45a4_MRB - Courtyard Pool 3.webp" alt="Properti 1">
+                    <h3>Rumah Mewah di Pusat Kota</h3>
+                    <p>Rp 5.000.000.000</p>
+                    <button class="detail-btn">Lihat Detail</button>
+                </div>
+                <!-- TODO: Untuk menghapus properti, hapus seluruh div dengan class "property-card" -->
+                <div class="property-card" data-id="2">
+                    <img src="./img/keraton-jimbaran-beach.jpg" alt="Properti 2">
+                    <h3>Apartemen Modern</h3>
+                    <p>Rp 2.500.000.000</p>
+                    <button class="detail-btn">Lihat Detail</button>
+                </div>
+                <!-- Tambahkan properti lainnya di sini -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>GLOBAL PROPERTY INNOVATION adalah perusahaan real estate terkemuka yang berdedikasi untuk memberikan solusi properti terbaik bagi klien kami. Dengan pengalaman bertahun-tahun di industri ini, kami bangga dapat menawarkan properti berkualitas tinggi dan layanan prima kepada pelanggan kami.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Kami</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: info@globalproperty.com</p>
+                <p>Telepon: +62 123 4567 890</p>
+                <p>Alamat: Jl. Properti Indah No. 123, Jakarta</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GLOBAL PROPERTY INNOVATION. All rights reserved.</p>
+    </footer>
+
+    <div id="property-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="./img/mulia2.webp" alt="Property Image">
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <p id="modal-location"></p>
+            <form id="whatsapp-form">
+                <button type="submit">Hubungi via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

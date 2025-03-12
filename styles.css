@@ -1,0 +1,288 @@
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logonav{
+    display: flex;
+    align-items: center;
+  }
+
+  .logonav h1{
+    margin-left: 10vw;
+  }
+  
+  #company-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url("img/Blue and White Geometric Real Estate LinkedIn Background Photo copy.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Properti section */
+  #properties {
+    padding: 4rem 2rem;
+  }
+  
+  .property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .property-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .property-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+  
+  .property-card p {
+    margin: 0 1rem 1rem;
+    color: #4a4a4a;
+  }
+  
+  .detail-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .detail-btn:hover {
+    background-color: #e6c200;
+  }
+  
+  /* About section */
+  #about {
+    background-color: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #about h2 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact section */
+  #contact {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #contact-form button {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    background-color: #333;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #modal-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  #whatsapp-form {
+    margin-top: 1rem;
+  }
+  
+  #whatsapp-form input,
+  #whatsapp-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #whatsapp-form button {
+    background-color: #25d366;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #whatsapp-form button:hover {
+    background-color: #128c7e;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      margin-top: 1rem;
+    }
+  
+    #contact {
+      flex-direction: column;
+    }
+  
+    #contact-form {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  
